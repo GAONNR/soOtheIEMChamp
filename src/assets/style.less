@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&.css');
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 100;
+  background-color: #000000;
+  color: #c0c4cc;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 900;
+  color: #fff;
+}
+
+.title-soo {
+  position: relative;
+  width: 100vw;
+  height: (100vw / 1440 * 736);
+  background: url('./champ-soo.jpg') center center no-repeat;
+  background-size: cover;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.7),
+      #000
+    );
+    opacity: 1;
+  }
+}
+
+.title-soo > h1 {
+  font-size: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
