@@ -2,30 +2,45 @@
   #app
     .title-soo
       h1 #soOtheIEMChamp
-    el-container
-      el-header
-        h1 Eo "soO" Yoon Soo
-      el-main
-        div(style="display: inline-block;")
-          ul(style="text-align: left;")
-            li 2013 WCS Korea Season 3 준우승자 (vs 백동준, 2:4)
-            li 2014 HOT6 GSL Season 1 준우승자 (vs 주성욱, 3:4)
-            li 2014 HOT6 GSL Season 2 준우승자 (vs 김도우, 2:4)
-            li 2014 HOT6 GSL Season 3 준우승자 (vs 이신형, 2:4)
-            li 2017 HOT6 GSL Season 1 준우승자 (vs 김대엽, 2:4)
-            li 2017 HOT6 GSL Season 2 준우승자 (vs 고병재, 2:4)
-            li 2017 WCS Global Finals 준우승자 (vs 이병렬, 2:4)
-            li 
-              strong IEM Season XIII - Katowice 우승자 (vs 김대엽, 4:2)
+    el-main
+      el-row
+        el-col(:xs="0" :sm="4" :md="6")
+            span &nbsp;
+        el-col(:xs="24" :sm="16" :md="12" style="text-align: justify;")
+          span.main-text 스타크래프트2 프로게이머 어윤수 선수의 생애 첫 프리미어급 리그 우승을 기념하기 위해 우주전쟁 마이너 갤러리(구 스타크래프트2 갤러리)의 팬들이 돈을 모아 지하철 2호선 삼성역에 광고를 걸게 되었습니다. 데뷔로부터 3,540일, 첫 준우승으로부터 1,961일, 프리미어급 대회 7번의 준우승 끝에 마침내 따낸 어윤수 선수의 값진 첫 우승을 함께 축하해주세요!
+        el-col(:xs="0" :sm="4" :md="6")
+          span &nbsp;
+
+      hr
+
+      el-row
+        el-col(:xs="0" :sm="4" :md="6")
+          span &nbsp;
+        el-col(:xs="24" :sm="16" :md="12")
+          SooProfile
+        el-col(:xs="0" :sm="4" :md="6")
+          span &nbsp;
+      
+      hr
+
+      el-row
+        el-col(:xs="0" :sm="4" :md="6")
+          span &nbsp;
+        el-col(:xs="24" :sm="16" :md="12")
+          ThanksTo
+        el-col(:xs="0" :sm="4" :md="6")
+          span &nbsp;
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import SooProfile from './components/SooProfile.vue';
+import ThanksTo from './components/ThanksTo.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    SooProfile,
+    ThanksTo
   }
 };
 </script>
