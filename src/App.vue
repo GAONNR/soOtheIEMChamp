@@ -3,7 +3,7 @@
     .title-soo
       h1 #soOtheIEMChamp
     el-main
-      el-row
+      el-row(style="margin: 0px 24px;")
         el-col(:xs="0" :sm="4" :md="6")
             span &nbsp;
         el-col(:xs="24" :sm="16" :md="12" style="text-align: justify;")
