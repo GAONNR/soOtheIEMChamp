@@ -2,9 +2,10 @@
   div
     h1 Thanks To
     .thanks(style="padding: 6px;")
-      template(v-for="thank in thanks")
-        span {{ thank }}
-        br
+      el-row
+        el-col(v-for="thank in thanks" :xs="12" :sm="8" :md="8" :key="thank") {{ thank }}
+    h4 총 {{ thanks.length - 1 }}명
+    a(href="https://gall.dcinside.com/mgallery/board/view/?id=sc2&no=284903" style="color: #409EFF;") 정산 게시글 링크
 </template>
 
 <script>
@@ -12,7 +13,102 @@ export default {
   name: 'SooProfile',
   props: {},
   data() {
-    return { thanks: ['ㅈㄱㄹ', 'GN40', '이너'] };
+    return {
+      thanks: [
+        'Riey',
+        '한여울지미',
+        'Haroeris',
+        '박*문',
+        '키위선생',
+        'DB',
+        '공허유입충',
+        '공구공오',
+        '지나가던팬',
+        '김*환',
+        '칸케르',
+        'Aqua',
+        '안재욱',
+        'NERO',
+        '윤수잘했다',
+        'romy',
+        'ㅂㄷㅂㄷ',
+        '윤수야고소만은제발',
+        '최문석',
+        '저그너프가시급',
+        '합의금',
+        '어윤수우승있다(김XX님)',
+        '탄화수소',
+        '김가온(GN40)',
+        'ㅇㅇ',
+        'Highseeker',
+        'magenty',
+        '지나가는스투팬',
+        '심장미인(Rikka)',
+        '별눈물',
+        'TLCrow',
+        '강우혁',
+        'lowb',
+        '우유쿠키',
+        '어우있(50,000원)',
+        '질럿이',
+        '어윤수우승있다(이XX님)',
+        '시무룩',
+        'soO장님 광고 후원',
+        '쿠르키',
+        '임요환팬',
+        '롯차',
+        '패션왕',
+        'Cenm',
+        'DragonCloud',
+        'ㅇㄹㅋ',
+        '전현우',
+        '최*훈',
+        '우승자어윤soO',
+        'EricHan',
+        '400가즈아',
+        '법시',
+        'ㅈㄱㄹ',
+        '기옥을모아줘',
+        '어어우있',
+        '어우있(10,000원)',
+        '이*상',
+        'yswings',
+        '어윤수우승있다(임XX님)',
+        '스갤 Deleted',
+        '성아',
+        '템루스',
+        '캐논',
+        'MiracleKid(너의우승은)',
+        '어우있(2,222원)',
+        '뉴비(NewB)',
+        '어윤수우승있다(2,222원)',
+        '왜탈것안타짐',
+        '은호',
+        '윽형',
+        '백수',
+        '즈즈트',
+        '녕녕이',
+        'KIMSTEAM',
+        'Nraptor',
+        'OsFree',
+        '어윤수화이팅',
+        'Nickelb',
+        'soO능',
+        '김*랑',
+        '총대감사합니다',
+        '김*섭',
+        '유지성',
+        '민트초코맨',
+        'File!',
+        '어윤수우승많다',
+        '총대커피사먹어',
+        '이너',
+        'GN40',
+        '포샵장인',
+        '크랭크',
+        'SaintSnorlax'
+      ]
+    };
   }
 };
 </script>
